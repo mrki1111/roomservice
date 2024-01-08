@@ -1,5 +1,6 @@
-Build setup for lineage
-### Ubuntu LTS
+-- BUILD ENVIRONMENT -- 
+# Ubuntu LTS - 22.04.3
+
 sudo apt install -yq android-platform-tools-base android-sdk-platform-tools android-sdk-platform-tools-common google-android-ndk-installer bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs gnupg gperf imagemagick lib32readline-dev lib32z1-dev libelf-dev liblz4-tool libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
 
 

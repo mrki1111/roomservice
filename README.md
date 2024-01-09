@@ -51,16 +51,16 @@ The SLSI projects include:
     android_hardware_samsung_slsi-linaro_openmax
 
 
-    -- BUILD ENVIRONMENT -- 
-# Ubuntu LTS - 22.04.3
-
+# BUILD ENVIRONMENT -- 
+## Ubuntu LTS - 22.04.3
+-
 sudo apt install -y openjdk-17-jre python-is-python3 python3-full python3 python3-dev bc bison build-essential ccache curl flex g++-multilib gcc-multilib git git-lfs gnupg gperf imagemagick lib32readline-dev lib32z1-dev libelf-dev liblz4-tool libsdl1.2-dev libssl-dev libxml2 libxml2-utils lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
-
+-
 For Ubuntu 23.10 (mantic), install libncurses5 from 23.04 (lunar) as follows:
 --- 
 wget http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.4-2_amd64.deb && sudo dpkg -i libtinfo5_6.4-2_amd64.deb && rm -f libtinfo5_6.4-2_amd64.deb
 wget http://archive.ubuntu.com/ubuntu/pool/universe/n/ncurses/libncurses5_6.4-2_amd64.deb && sudo dpkg -i libncurses5_6.4-2_amd64.deb && rm -f libncurses5_6.4-2_amd64.deb
---- 
+ 
 
 mkdir -p ~/.bin
 

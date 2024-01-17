@@ -5,16 +5,13 @@
     <remote name="K9100ii" fetch="https://github.com/K9100ii/" />
     
 #kernel
-    <project name="mrki1111/android_kernel_samsung_gta3xlwifi" path="kernel/samsung/gta3xlwifi" remote="mrki1111" revision="lineage-20"/>
-    <project name="mrki1111/android_kernel_samsung_universal7904" path="kernel/samsung/universal7904" remote="mrki1111" revision="lineage-20"/>
-
+    <project name="mrki1111/android_kernel_samsung_gta3xlwifi" path="kernel/samsung/gta3xlwifi" remote="mrki1111" revision="lineage"/>
+  
 #device
-    <project name="mrki1111/device_samsung_gta3xlwifi" path="device/samsung/gta3xlwifi" remote="mrki1111" revision="lineage-20"/>
-    <project name="mrki1111/android_device_samsung_universal7904-common" path="device/samsung/universal7904-common" remote="mrki1111" revision="lineage-20"/>
-
+    
 #vendor
-    <project name="mrki1111/vendor_samsung_gta3xlwifi" path="vendor/samsung/gta3xlwifi" remote="mrki1111" revision="lineage-20"/>
-    <project name="mrki1111/proprietary_vendor_samsung_universal7904-common" path="vendor/samsung/universal7904-common" remote="mrki1111" revision="lineage-20"/>
+
+ 
 #SLSI
     <project name="android_hardware_samsung" path="hardware/samsung" remote="lineage" revision="lineage-20"/>
     <project name="android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="lineage" revision="lineage-20"/>
@@ -26,6 +23,8 @@
     <project name="android_hardware_samsung_slsi-linaro_exynos5" path="hardware/samsung_slsi-linaro/exynos5" remote="K9100ii" revision="lineage-20" />
     <project name="android_hardware_samsung_slsi-linaro_graphics" path="hardware/samsung_slsi-linaro/graphics" remote="K9100ii" revision="lineage-20" />
     <project name="android_hardware_samsung_slsi-linaro_openmax" path="hardware/samsung_slsi-linaro/openmax" remote="K9100ii" revision="lineage-20" />
-    
-</manifest>
+    <project name="android_hardware_samsung_slsi_fm" path="hardware/samsung_slsi/fm" remote="lineage" revision="lineage-20"/>
+    <project name="android_hardware_samsung_slsi-linaro_interfaces" path="hardware/samsung_slsi-linaro/interfaces" remote="K9100ii" revision="lineage-20" />
 
+
+</manifest>

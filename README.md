@@ -172,94 +172,94 @@ Below is a list of the key dependencies that we will be installing. Each depende
 -----
 To develop Android ROMs and kernels on Fedora Linux, you will need to install several packages. Here is a list of the packages you need to install, along with the corresponding installation commands:
 
-    Development Tools and Libraries
+Development Tools and Libraries
 
-  sudo dnf -y groupinstall "Development Tools" "Development Libraries"
+      sudo dnf -y groupinstall "Development Tools" "Development Libraries"
 
-    gcc-c++ and its variants
+gcc-c++ and its variants
 
-  sudo dnf -y install gcc-c++.* gcc-c++-arm* gcc-c++-x*
+      sudo dnf -y install gcc-c++.* gcc-c++-arm* gcc-c++-x*
 
-    readline and its variants
+readline and its variants
 
-  sudo dnf -y install readline.* readline-devel.* readline-static.*
+      sudo dnf -y install readline.* readline-devel.* readline-static.*
 
-    z compression libraries
+z compression libraries
 
-  sudo dnf -y install zlib.* zlib-devel.* zlibrary.* zlibrary-devel.*
-  sudo dnf -y install zlibrary.*
-  sudo dnf -y install zlibrary-devel.*
-  sudo dnf -y install lzma*
-  sudo dnf -y install xz*
+      sudo dnf -y install zlib.* zlib-devel.* zlibrary.* zlibrary-devel.*
+      sudo dnf -y install zlibrary.*
+      sudo dnf -y install zlibrary-devel.*
+      sudo dnf -y install lzma*
+      sudo dnf -y install xz*
 
-    ncurses and its variants
+ncurses and its variants
 
-  sudo dnf -y install ncurses.* ncurses-devel.* ncurses-*
+      sudo dnf -y install ncurses.* ncurses-devel.* ncurses-*
 
-    ImageMagick
+ImageMagick
 
-  sudo dnf -y install ImageMagick.* ImageMagick-*
+      sudo dnf -y install ImageMagick.* ImageMagick-*
 
-    SDL and SDL2
+SDL and SDL2
 
-  sudo dnf -y install SDL* SDL-* SDL2*
+      sudo dnf -y install SDL* SDL-* SDL2*
 
-    openssl and openssl-libs
+openssl and openssl-libs
 
-  sudo dnf -y install openssl* openssl-*
+    sudo dnf -y install openssl* openssl-*
 
-    gtk3 and its variant
+gtk3 and its variant
 
-  sudo dnf -y install gtk3 gtk3-devel*
+      sudo dnf -y install gtk3 gtk3-devel*
 
-    libxml2 and its variants
+libxml2 and its variants
 
-   sudo dnf -y install libxml2 libxml2-devel.* libxml++.* libxml++*
+       sudo dnf -y install libxml2 libxml2-devel.* libxml++.* libxml++*
 
-    java-1.8.0-openjdk and its variant
+java-1.8.0-openjdk and its variant   /  optional and dependent on what you are building /
 
-   sudo dnf -y install java-1.8.0-openjdk.*
-   sudo dnf -y install java-1.8.0-openjdk-devel.*
+       sudo dnf -y install java-1.8.0-openjdk.*
+       sudo dnf -y install java-1.8.0-openjdk-devel.*
 
-    libxslt
+libxslt
 
-   sudo dnf -y install libxslt libxslt-devel
+       sudo dnf -y install libxslt libxslt-devel
 
-    bc, bison, ccache, curl, flex, git, gnupg, gperf, lzop, pngcrush, rsync, schedtool, squashfs-tools, zip
+bc, bison, ccache, curl, flex, git, gnupg, gperf, lzop, pngcrush, rsync, schedtool, squashfs-tools, zip
 
-   sudo dnf -y install bc bison ccache curl flex git gnupg gperf lzop pngcrush rsync schedtool squashfs-tools zip
+       sudo dnf -y install bc bison ccache curl flex git gnupg gperf lzop pngcrush rsync schedtool squashfs-tools zip
 
-    glibc-devel.x86_64 and glibc-devel.i686
+glibc-devel.x86_64 and glibc-devel.i686
 
-   sudo dnf install -y glibc-devel.x86_64 glibc-devel.i686
+       sudo dnf install -y glibc-devel.x86_64 glibc-devel.i686
 
-    python3 and python3-devel
+python3 and python3-devel
 
-   sudo dnf install -y python3 python3-devel
+       sudo dnf install -y python3 python3-devel
 
-    xorg-x11-proto-devel
+xorg-x11-proto-devel
 
-   sudo dnf install -y xorg-x11-proto-devel
+       sudo dnf install -y xorg-x11-proto-devel
 
-    libX11-devel.*
+libX11-devel.*
 
-   sudo dnf install -y libX11-devel.*
+       sudo dnf install -y libX11-devel.*
 
-    ccache
+ccache
 
-   sudo dnf install -y ccache
+       sudo dnf install -y ccache
 
-    Open GL library mesa-libG*
+Open GL library mesa-libG*
 
-   sudo dnf install -y mesa-libG*
+       sudo dnf install -y mesa-libG*
 
-    VirtualBox dependencies
+VirtualBox dependencies
 
-   sudo dnf install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms qt5-qtx11extras libxkbcommon
+       sudo dnf install -y binutils gcc make patch libgomp glibc-headers glibc-devel kernel-headers kernel-devel dkms qt5-qtx11extras libxkbcommon
 
-    32 bit packages
+32 bit packages
 
-   sudo dnf install glibc.i686 glibc-devel.i686 libstdc++.i686 zlib-devel.i686 ncurses-devel.i686 libX11-devel.i686 libXrender.i686 libXrandr.i686
+       sudo dnf install glibc.i686 glibc-devel.i686 libstdc++.i686 zlib-devel.i686 ncurses-devel.i686 libX11-devel.i686 libXrender.i686 libXrandr.i686
 
 
 

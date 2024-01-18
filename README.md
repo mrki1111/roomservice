@@ -68,6 +68,8 @@ mkdir -p ~/.bin
 mkdir -p ~/android/lineage
 
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+
+
 chmod a+x ~/.bin/repo
 
 #### set PATH so it includes user's private bin if it exists

@@ -5,12 +5,12 @@
     <remote name="K9100ii" fetch="https://github.com/K9100ii/" />
     
 #kernel
-    <project name="mrki1111/android_kernel_samsung_gta3xlwifi" path="kernel/samsung/gta3xlwifi" remote="mrki1111" revision="lineage"/>
-  
-#device
-    
-#vendor
+    <project name="mrki1111/android_kernel_samsung_gta3xlwifi" path="kernel/samsung/gta3xlwifi" remote="mrki1111" revision="lineage-21"/>
 
+    <project name="mrki1111/android_device_samsung_gta3xlwifi" path="device/samsung/gta3xlwifi" remote="mrki1111" revision="lineage-20"/>
+
+    <project name="mrki1111/vendor_samsung_gta3xlwifi" path="vendor/samsung/gta3xlwifi" remote="mrki1111" revision="lineage-20"/>
+  
  
 #SLSI
     <project name="android_hardware_samsung" path="hardware/samsung" remote="lineage" revision="lineage-20"/>

@@ -3,6 +3,32 @@
     <remote name="mrki1111" fetch="https://github.com/" />
     <remote name="lineage" fetch="https://github.com/LineageOS/" />
     <remote name="K9100ii" fetch="https://github.com/K9100ii/" />
+
+  <!-- FORKS -->
+  <!-- Contains patches for signature spoofing and a possible slight improvement in screen recording quality.
+       Optional if neither are required, must also remove android_packages_modules_Permission fork if removed. -->
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <project name="K9100ii/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-19.1" />
+
+  <!-- Contains another patch for signature spoofing - Optional if signature spoofing isn't required, must also
+       remove android_frameworks_base fork if removed. -->
+  <remove-project name="LineageOS/android_packages_modules_Permission" />
+  <project name="K9100ii/android_packages_modules_Permission" path="packages/modules/Permission" remote="github" revision="lineage-19.1" />
+
+  <!-- Contain patches needed since the kernel has no eBPF support - REQUIRED -->
+  <remove-project name="platform/system/bpf" />
+  <project name="K9100ii/android_system_bpf" path="system/bpf" remote="github" revision="android-12L" />
+  <remove-project name="LineageOS/android_system_netd" />
+  <project name="K9100ii/android_system_netd" path="system/netd" remote="github" revision="lineage-19.1" />
+
+  <!-- Contains a patch for improving graphical performance - Optional -->
+  <remove-project name="LineageOS/android_frameworks_native" />
+  <project name="K9100ii/android_frameworks_native" path="frameworks/native" remote="github" revision="lineage-19.1" />
+  <!-- END OF FORKS -->
+
+  <!-- Open source aptX and aptX HD encoders -->
+  <project name="K9100ii/android_external_aptxenc" path="external/aptxenc" remote="github" revision="android12L" />
+
     
 #kernel
     <project name="mrki1111/android_kernel_samsung_gta3xlwifi" path="kernel/samsung/gta3xlwifi" remote="mrki1111" revision="lineage-21"/>
@@ -13,18 +39,18 @@
   
  
 #SLSI
-    <project name="android_hardware_samsung" path="hardware/samsung" remote="lineage" revision="lineage-20"/>
-    <project name="android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="lineage" revision="lineage-20"/>
-    <project name="android_hardware_samsung_slsi_libbt" path="hardware/samsung_slsi/libbt" remote="lineage" revision="lineage-20"/>
-    <project name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" remote="lineage" revision="lineage-20"/>
-    <project name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" remote="lineage" revision="lineage-20"/>
-    <project name="android_hardware_samsung_slsi-linaro_config" path="hardware/samsung_slsi-linaro/config" remote="K9100ii" revision="lineage-20" />
-    <project name="android_hardware_samsung_slsi-linaro_exynos" path="hardware/samsung_slsi-linaro/exynos" remote="K9100ii" revision="lineage-20" />
-    <project name="android_hardware_samsung_slsi-linaro_exynos5" path="hardware/samsung_slsi-linaro/exynos5" remote="K9100ii" revision="lineage-20" />
-    <project name="android_hardware_samsung_slsi-linaro_graphics" path="hardware/samsung_slsi-linaro/graphics" remote="K9100ii" revision="lineage-20" />
-    <project name="android_hardware_samsung_slsi-linaro_openmax" path="hardware/samsung_slsi-linaro/openmax" remote="K9100ii" revision="lineage-20" />
-    <project name="android_hardware_samsung_slsi_fm" path="hardware/samsung_slsi/fm" remote="lineage" revision="lineage-20"/>
-    <project name="android_hardware_samsung_slsi-linaro_interfaces" path="hardware/samsung_slsi-linaro/interfaces" remote="K9100ii" revision="lineage-20" />
+    <project name="android_hardware_samsung" path="hardware/samsung" remote="lineage" revision="lineage-19.1"/>
+    <project name="android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="lineage" revision="lineage-19.1"/>
+    <project name="android_hardware_samsung_slsi_libbt" path="hardware/samsung_slsi/libbt" remote="lineage" revision="lineage-19.1"/>
+    <project name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" remote="lineage" revision="lineage-19.1"/>
+    <project name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" remote="lineage" revision="lineage-19.1"/>
+    <project name="android_hardware_samsung_slsi-linaro_config" path="hardware/samsung_slsi-linaro/config" remote="K9100ii" revision="lineage-19.1" />
+    <project name="android_hardware_samsung_slsi-linaro_exynos" path="hardware/samsung_slsi-linaro/exynos" remote="K9100ii" revision="lineage-19.1" />
+    <project name="android_hardware_samsung_slsi-linaro_exynos5" path="hardware/samsung_slsi-linaro/exynos5" remote="K9100ii" revision="lineage-19.1" />
+    <project name="android_hardware_samsung_slsi-linaro_graphics" path="hardware/samsung_slsi-linaro/graphics" remote="K9100ii" revision="lineage-19.1" />
+    <project name="android_hardware_samsung_slsi-linaro_openmax" path="hardware/samsung_slsi-linaro/openmax" remote="K9100ii" revision="lineage-19.1" />
+    <project name="android_hardware_samsung_slsi_fm" path="hardware/samsung_slsi/fm" remote="lineage" revision="lineage-19.1"/>
+    <project name="android_hardware_samsung_slsi-linaro_interfaces" path="hardware/samsung_slsi-linaro/interfaces" remote="K9100ii" revision="lineage-19.1" />
 
 
 </manifest>
